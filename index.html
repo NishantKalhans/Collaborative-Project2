@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reebok Shoes</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow-y: scroll;
+        position: relative;
+    }
+    .container {
+        border: 8px solid black;
+    }
+    .first-navbar {
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        height: 45px;
+        justify-content: space-between;
+    }
+    .first-navbar p {
+        margin: 0;
+        cursor: pointer;
+    }
+    .first-navbar img {
+        margin: 0 5px;
+        height: 25px;
+    }
+    .first-navbar img:last-child {
+        margin-right: 0;
+    }
+    .first-navbar p:hover {
+        background-color: #ffffff1a;
+    }
+    .second-navbar {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 50px; 
+        padding-top: 25px;
+        padding-bottom: 35px;
+        position: relative; 
+    }
+    .second-navbar img, .second-navbar p {
+        margin: 0 10px;
+        height: 20px;
+    }
+    .second-navbar img:first-child {
+        margin-left: 0;
+        height: 80px; 
+    }
+    .second-navbar img:last-child[src="search.jpg"] {
+        margin-right: 10px; 
+        padding-left: 10px; 
+    }
+    .second-navbar p:last-child {
+        margin-left: 0; 
+        padding-left: 0; 
+    }
+    .second-navbar img:last-child[src="search.jpg"], .second-navbar p:last-child {
+        margin-right: 0;
+    }
+    .second-navbar p:hover {
+        background-color: #0000001a;
+        cursor: pointer;
+    }
+    .images-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .image-box {
+        position: relative;
+        width: 300px;
+        margin-right: 20px;
+    }
+    .image-box img {
+        width: 100%;
+        height: auto;
+    }
+    .image-box .description {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        margin: 0;
+        padding: 5px;
+    }
+    #sale {
+        color: #ff0000;
+    }
+    .description {
+        background-color: #1a8bb789;
+    }
+    .image-box .description p {
+        margin: 0;
+    }
+    .image-box .heart-img {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px; 
+    }
+    .image-box .heart-img:hover {
+        filter: brightness(0) saturate(100%) hue-rotate(10deg) brightness(1.2);
+    }
+    .navbar-right-items {
+        display: flex;
+        align-items: center;
+        margin-left: auto; 
+        gap: 20px; 
+    }
+    .pink-rectangle {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background-color: pink;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        padding-top: 1px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    .pink-para {
+        margin-left: 10px;
+    }
+    #truck {
+        height: 25px;
+    }
+    .second-navbar img[src="search.jpg"] {
+        margin-left: 250px; 
+    }
+    #search {
+        text-decoration: underline;
+    }
+    
+    .support-chat {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 40px; 
+        z-index: 9999; 
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-navbar">
+            <p>MORE BRANDS<span class="dropdown-arrow">&#9660;</span></p>
+            <div class="navbar-right-items"> 
+                <img src="location.jpg" alt="Small Image">
+                <p>STORES</p>
+                <img src="information_1958974.jpg" alt="Small Image">
+                <p>CONTACT US</p>
+                <img src="user_1077114.jpg" alt="Small Image">
+                <p>LOGIN</p>
+                <img src="heart.jpg" alt="Small Image">
+                <img src="briefcase.jpg" alt="Small Image">
+                <img src="Aditya_Birla_Fashion_and_Retail.svg.jpg" alt="Small Image">
+            </div>
+        </div>
+        <div class="second-navbar">
+            <img src="Reebok-Logo-PNG-HD-Image.jpg" alt="Image on Left">
+            <p>NEW</p>
+            <p>ICONS</p>
+            <p>MEN</p>
+            <p>WOMEN</p>
+            <p>SPORTS</p>
+            <p>CLASSIC</p>
+            <P id="sale">SALE</P>
+            <img src="search.jpg" alt="Image on Right">
+            <p id="search">Search Classic</p>
+            <div class="pink-rectangle">
+                <img id="truck" src="truck-512.jpg" alt="Small Image">
+                <div class="pink-para">
+                    <p>EXPRESS DELIVERY</p>
+                    <p>Select your nearest store > </p>
+                </div>
+            </div>
+        </div>
+        <div class="images-container">
+            <div class="image-box">
+                <img src="nfx trainer light green.jpg" alt="Image 1">
+                <div class="description">
+                    <p>I AM THE NEW</p>
+                </div>
+                <img src="heart.jpg" alt="Heart Image" class="heart-img">
+                <div class="product-details">
+                    <p>TRAINING SHOES</p>
+                    <p>Reebok Women NFX Trainer</p>
+                    <p>₹7599</p>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="club c 85 w.jpg" alt="Image 2">
+                <div class="description">
+                    <p>I AM THE NEW</p>
+                </div>
+                <img src="heart.jpg" alt="Heart Image" class="heart-img">
+                <div class="product-details">
+                    <p>CLASSICS SHOES</p>
+                    <p>Reebok Women Club C 85 W</p>
+                    <p>₹6999</p>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="energen plus 2.jpg" alt="Image 3">
+                <div class="description">
+                    <p>I AM THE NEW</p>
+                </div>
+                <img src="heart.jpg" alt="Heart Image" class="heart-img">
+                <div class="product-details">
+                    <p>RUNNING SHOES</p>
+                    <p>Reebok Women Energen Plus 2</p>
+                    <p>₹6999</p>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="energen plus 2 black.jpg" alt="Image 4">
+                <div class="description">
+                    <p>I AM THE NEW</p>
+                </div>
+                <img src="heart.jpg" alt="Heart Image" class="heart-img">
+                <div class="product-details">
+                    <p>CLASSIC SHOES</p>
+                    <p>Reebok Women Unisex Classic Leather</p>
+                    <p>₹7999</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="comment.jpg" alt="support" class="support-chat">
+</body>
+</html>
